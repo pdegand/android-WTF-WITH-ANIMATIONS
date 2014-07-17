@@ -58,7 +58,11 @@
         </activity>
         <activity
             android:name=".activity.ViewPropertyAnimatorActivity"
-            android:label="@string/title_activity_view_property_animator" >
+            android:label="@string/title_activity_view_property_animator"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.octo.pde.androidanimations.activity.MainActivity" />>
         </activity>
         <activity
             android:name=".activity.TransitionBasicsActivity"
