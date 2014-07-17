@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_api_level_1">#008D0C</color>
+    <color name="color_api_level_11">#E4E500</color>
+    <color name="color_api_level_12">#E5B800</color>
+    <color name="color_api_level_16">#ffe56c00</color>
+    <color name="color_api_level_19">#B52F00</color>
+    <color name="blue_octo">#123961</color>
+    <color name="debug">#00ff00</color>
+</resources>
