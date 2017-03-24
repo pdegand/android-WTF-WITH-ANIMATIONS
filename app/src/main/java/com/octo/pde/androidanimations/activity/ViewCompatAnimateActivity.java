@@ -1,18 +1,15 @@
 package com.octo.pde.androidanimations.activity;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v4.view.ViewCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.octo.pde.androidanimations.R;
 
-import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
-
-public class NineOldAndroidsActivity extends ActionBarActivity {
+public class ViewCompatAnimateActivity extends AppCompatActivity {
 
     private View imageViewOctoLove;
 
@@ -21,7 +18,7 @@ public class NineOldAndroidsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nine_old_androids);
         imageViewOctoLove = findViewById(R.id.imageview_octo_love);
-        animate(imageViewOctoLove).setDuration(500);
+        ViewCompat.animate(imageViewOctoLove).setDuration(500);
     }
 
     public void doClick(View view) {
@@ -31,7 +28,7 @@ public class NineOldAndroidsActivity extends ActionBarActivity {
     public void doViewPropertyAnimator(View view) {
         ToggleButton button = (ToggleButton) view;
         if (button.isChecked()) {
-            animate(imageViewOctoLove)
+            ViewCompat.animate(imageViewOctoLove)
                     .translationY(500)
                     .rotation(360)
                     .rotationX(360)
@@ -39,7 +36,7 @@ public class NineOldAndroidsActivity extends ActionBarActivity {
                     .scaleX(1.2f)
                     .scaleY(1.2f);
         } else {
-            animate(imageViewOctoLove)
+            ViewCompat.animate(imageViewOctoLove)
                     .translationY(0)
                     .rotation(360)
                     .rotationX(0)

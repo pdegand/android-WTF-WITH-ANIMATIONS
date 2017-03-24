@@ -8,6 +8,7 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.OvershootInterpolator;
@@ -16,7 +17,7 @@ import com.octo.pde.androidanimations.view.OctoView;
 import com.octo.pde.androidanimations.R;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class LayoutTransitionActivity extends ActionBarActivity {
+public class LayoutTransitionActivity extends AppCompatActivity {
 
     private ViewGroup containerViewgroup;
 

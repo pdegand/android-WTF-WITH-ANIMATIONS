@@ -1,12 +1,12 @@
 package com.octo.pde.androidanimations.activity;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.octo.pde.androidanimations.R;
 
-public class ActivityTransitionActivity extends ActionBarActivity {
+public class ActivityTransitionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

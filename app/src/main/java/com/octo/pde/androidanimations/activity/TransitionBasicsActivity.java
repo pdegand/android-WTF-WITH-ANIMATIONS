@@ -2,21 +2,18 @@ package com.octo.pde.androidanimations.activity;
 
 import android.annotation.TargetApi;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.transition.AutoTransition;
 import android.transition.Scene;
 import android.transition.TransitionManager;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ToggleButton;
 
 import com.octo.pde.androidanimations.R;
 
 @TargetApi(Build.VERSION_CODES.KITKAT)
-public class TransitionBasicsActivity extends ActionBarActivity {
+public class TransitionBasicsActivity extends AppCompatActivity {
 
     private Scene scene;
     private ViewGroup container;

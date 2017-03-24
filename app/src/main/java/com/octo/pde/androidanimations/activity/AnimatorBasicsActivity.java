@@ -8,8 +8,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
@@ -19,7 +19,7 @@ import android.widget.Toast;
 import com.octo.pde.androidanimations.R;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class AnimatorBasicsActivity extends ActionBarActivity {
+public class AnimatorBasicsActivity extends AppCompatActivity {
 
     private View rootView;
     private TextView paddingTextView;

@@ -3,7 +3,8 @@ package com.octo.pde.androidanimations.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -11,14 +12,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.octo.pde.androidanimations.structure.Menu;
 import com.octo.pde.androidanimations.R;
+import com.octo.pde.androidanimations.structure.Menu;
 
 import java.util.Arrays;
 import java.util.List;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     private MenusAdapter adapter;
 
@@ -43,12 +44,13 @@ public class MainActivity extends ActionBarActivity {
 
     private class MenusAdapter extends ArrayAdapter<Menu>{
 
-        public MenusAdapter(Context context, List<Menu> objects) {
+        MenusAdapter(Context context, List<Menu> objects) {
             super(context, R.layout.cell_menu, R.id.textview_title, objects);
         }
 
+        @NonNull
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(int position, View convertView, @NonNull ViewGroup parent) {
             Menu item = getItem(position);
             View view = super.getView(position, convertView, parent);
             view.setBackgroundColor(

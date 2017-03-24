@@ -1,24 +1,18 @@
 package com.octo.pde.androidanimations.activity;
 
-import android.animation.Animator;
 import android.animation.LayoutTransition;
-import android.animation.ObjectAnimator;
-import android.animation.PropertyValuesHolder;
 import android.annotation.TargetApi;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.OvershootInterpolator;
 
 import com.octo.pde.androidanimations.R;
 import com.octo.pde.androidanimations.view.OctoView;
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-public class LayoutTransitionChangingActivity extends ActionBarActivity {
+public class LayoutTransitionChangingActivity extends AppCompatActivity {
 
     private ViewGroup containerViewgroup;
     @Override

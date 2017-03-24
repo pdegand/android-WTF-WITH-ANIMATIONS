@@ -1,5 +1,7 @@
 package com.octo.pde.androidanimations.structure;
 
+import android.support.annotation.NonNull;
+
 import com.octo.pde.androidanimations.activity.ActivityTransitionActivity;
 import com.octo.pde.androidanimations.activity.AnimationBasicsActivity;
 import com.octo.pde.androidanimations.activity.AnimationLimitsActivity;
@@ -7,7 +9,7 @@ import com.octo.pde.androidanimations.activity.AnimatorBasicsActivity;
 import com.octo.pde.androidanimations.activity.AnimatorChoregraphyActivity;
 import com.octo.pde.androidanimations.activity.LayoutTransitionActivity;
 import com.octo.pde.androidanimations.activity.LayoutTransitionChangingActivity;
-import com.octo.pde.androidanimations.activity.NineOldAndroidsActivity;
+import com.octo.pde.androidanimations.activity.ViewCompatAnimateActivity;
 import com.octo.pde.androidanimations.activity.TransitionBasicsActivity;
 import com.octo.pde.androidanimations.activity.ViewPropertyAnimatorActivity;
 
@@ -22,7 +24,7 @@ public enum Menu {
     ANIMATOR_BASICS("Animator Basics", AnimatorBasicsActivity.class, ApiLevel.API_LEVEL_11),
     ANIMATOR_CHOREGRAPHY("Animator Choregraphy", AnimatorChoregraphyActivity.class, ApiLevel.API_LEVEL_11),
     VIEW_PROPERTY_ANIMATOR("ViewPropertyAnimator", ViewPropertyAnimatorActivity.class, ApiLevel.API_LEVEL_12),
-    NINE_OLD_ANDROIDS("NineOldAndroids", NineOldAndroidsActivity.class, ApiLevel.API_LEVEL_1),
+    NINE_OLD_ANDROIDS("NineOldAndroids", ViewCompatAnimateActivity.class, ApiLevel.API_LEVEL_1),
     LAYOUT_TRANSITION("Layout Transition", LayoutTransitionActivity.class, ApiLevel.API_LEVEL_11),
     LAYOUT_TRANSITION_CHANGING("Layout Transition Changing", LayoutTransitionChangingActivity.class, ApiLevel.API_LEVEL_16),
     TRANSITION_BASICS("Transition Basics", TransitionBasicsActivity.class, ApiLevel.API_LEVEL_19);
@@ -42,10 +44,12 @@ public enum Menu {
         return this.title;
     }
 
+    @NonNull
     public Class getClassToStart() {
         return clazz;
     }
 
+    @NonNull
     public ApiLevel getApiLevel() {
         return apiLevel;
     }

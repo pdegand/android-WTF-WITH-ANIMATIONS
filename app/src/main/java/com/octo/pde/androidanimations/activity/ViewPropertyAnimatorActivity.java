@@ -2,17 +2,15 @@ package com.octo.pde.androidanimations.activity;
 
 import android.annotation.TargetApi;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ToggleButton;
 
 import com.octo.pde.androidanimations.R;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
-public class ViewPropertyAnimatorActivity extends ActionBarActivity {
+public class ViewPropertyAnimatorActivity extends AppCompatActivity {
 
     private View imageViewOctoLove;
 

@@ -1,9 +1,7 @@
 package com.octo.pde.androidanimations.activity;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
@@ -12,7 +10,7 @@ import android.widget.Toast;
 
 import com.octo.pde.androidanimations.R;
 
-public class AnimationLimitsActivity extends ActionBarActivity {
+public class AnimationLimitsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

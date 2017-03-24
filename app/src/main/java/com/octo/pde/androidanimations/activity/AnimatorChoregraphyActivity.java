@@ -1,16 +1,13 @@
 package com.octo.pde.androidanimations.activity;
 
 import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.annotation.TargetApi;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.LinearInterpolator;
@@ -19,7 +16,7 @@ import android.view.animation.OvershootInterpolator;
 import com.octo.pde.androidanimations.R;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class AnimatorChoregraphyActivity extends ActionBarActivity {
+public class AnimatorChoregraphyActivity extends AppCompatActivity {
 
     private View octoImageView;
 

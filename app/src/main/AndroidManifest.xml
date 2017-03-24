@@ -73,7 +73,7 @@
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
         </activity>
         <activity
-            android:name=".activity.NineOldAndroidsActivity"
+            android:name=".activity.ViewCompatAnimateActivity"
             android:label="@string/title_activity_nine_old_androids"
             android:parentActivityName=".activity.MainActivity" >
             <meta-data
