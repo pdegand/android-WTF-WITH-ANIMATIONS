@@ -3,6 +3,7 @@ package com.octo.pde.androidanimations.activity
 import android.os.Build
 import android.os.Bundle
 import android.support.annotation.RequiresApi
+import android.support.v4.view.ViewCompat
 import android.support.v7.app.AppCompatActivity
 import android.transition.ChangeBounds
 import android.transition.ChangeImageTransform
@@ -34,6 +35,7 @@ class ActivityTransitionTargetActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_activity_transition_target)
+        ViewCompat.setTransitionName(betterWayImageView, VIEW_NAME_BETTER_WAY)
 
         window.enterTransition = Slide(Gravity.BOTTOM).apply {
             addTarget(titleTextView)

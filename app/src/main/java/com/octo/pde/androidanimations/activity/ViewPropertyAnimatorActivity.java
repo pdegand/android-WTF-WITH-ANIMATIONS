@@ -1,5 +1,7 @@
 package com.octo.pde.androidanimations.activity;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -37,7 +39,15 @@ public class ViewPropertyAnimatorActivity extends AppCompatActivity {
                              .rotationX(360)
                              .rotationY(360)
                              .scaleX(1.5f)
-                             .scaleY(1.5f);
+                             .scaleY(1.5f)
+                             .setListener(new AnimatorListenerAdapter() {
+                                 @Override
+                                 public void onAnimationEnd(Animator animation) {
+                                     super.onAnimationEnd(animation);
+                                     Toast.makeText(ViewPropertyAnimatorActivity.this, "coucou",
+                                                    Toast.LENGTH_SHORT).show();
+                                 }
+                             });
         } else {
             ViewCompat.animate(imageViewOctoLove)
                       .translationY(0)
@@ -45,6 +55,7 @@ public class ViewPropertyAnimatorActivity extends AppCompatActivity {
                       .rotationX(0)
                       .rotationY(0)
                       .scaleX(1)
+                      .setListener(null)
                       .scaleY(1);
         }
     }

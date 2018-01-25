@@ -19,5 +19,4 @@
         android:layout_height="wrap_content"
         android:stateListAnimator="@animator/state_list_scale"
         android:text="Octo" />
-
 </LinearLayout>

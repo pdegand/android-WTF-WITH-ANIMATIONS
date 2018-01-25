@@ -49,6 +49,7 @@ public class AnimatorBasicsActivity extends AppCompatActivity {
         translationAnimator.setDuration(400);
         translationAnimator.setInterpolator(new FastOutSlowInInterpolator());
         translationAnimator.addListener(new AnimatorListenerAdapter() {
+
             @Override
             public void onAnimationEnd(Animator animation) {
                 ObjectAnimator translationAnimator = ObjectAnimator.ofFloat(

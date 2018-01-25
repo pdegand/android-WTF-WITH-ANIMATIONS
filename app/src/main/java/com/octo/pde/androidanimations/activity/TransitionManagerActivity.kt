@@ -43,7 +43,7 @@ class TransitionManagerActivity : AppCompatActivity() {
                         }
                     }
                     interpolator = fadeInterpolator
-                    duration = 600
+                    duration = 2000
                 })
             }
             TransitionManager.beginDelayedTransition(rootContainer, transition)

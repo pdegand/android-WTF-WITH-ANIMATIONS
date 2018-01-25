@@ -3,10 +3,11 @@ package com.octo.pde.androidanimations.activity;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.transition.AutoTransition;
 import android.support.transition.Scene;
+import android.support.transition.Slide;
 import android.support.transition.TransitionManager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -33,7 +34,7 @@ public class TransitionBasicsActivity extends AppCompatActivity {
 
     public void doSceneTransition(View view) {
         scene = Scene.getSceneForLayout(container, R.layout.activity_transition_basics_scene2, this);
-        TransitionManager.go(scene, new AutoTransition());
+        TransitionManager.go(scene, new Slide(Gravity.RIGHT));
     }
 
     public void revertSceneTransition(View view) {

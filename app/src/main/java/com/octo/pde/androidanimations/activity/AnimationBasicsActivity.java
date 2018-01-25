@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.octo.pde.androidanimations.R;
 
-public class AnimationBasicsActivity extends AppCompatActivity {
+public class  AnimationBasicsActivity extends AppCompatActivity {
 
     private View octo;
     private int mediumAnimTime;
