@@ -11,6 +11,7 @@
     android:clipToPadding="false">
 
     <LinearLayout
+        android:id="@+id/actionContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true">
@@ -30,6 +31,14 @@
             android:text="Property"
             android:onClick="doProperty"/>
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionContainer"
+        android:layout_centerHorizontal="true"
+        android:onClick="doKeyFrame"
+        android:text="Keyframe"/>
 
     <LinearLayout
         android:id="@+id/layout_octo_love"
