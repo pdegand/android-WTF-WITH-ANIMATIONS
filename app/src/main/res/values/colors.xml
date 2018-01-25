@@ -5,6 +5,7 @@
     <color name="color_api_level_12">#E5B800</color>
     <color name="color_api_level_16">#ffe56c00</color>
     <color name="color_api_level_19">#B52F00</color>
+    <color name="color_api_level_21">#ac00b5</color>
     <color name="blue_octo">#123961</color>
     <color name="debug">#00ff00</color>
 </resources>

@@ -6,7 +6,6 @@ import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.annotation.TargetApi;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,12 +25,12 @@ public class LayoutTransitionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_transition);
 
-        containerViewgroup = (ViewGroup) findViewById(R.id.layout_container);
+        containerViewgroup = findViewById(R.id.layout_container);
 
         LayoutTransition transition = new LayoutTransition();
 
-        PropertyValuesHolder scaleX = PropertyValuesHolder.ofFloat("scaleX", 0, 1);
-        PropertyValuesHolder scaleY = PropertyValuesHolder.ofFloat("scaleY", 0, 1);
+        PropertyValuesHolder scaleX = PropertyValuesHolder.ofFloat(View.SCALE_X, 0, 1);
+        PropertyValuesHolder scaleY = PropertyValuesHolder.ofFloat(View.SCALE_Y, 0, 1);
         Animator scaleUpAnimator = ObjectAnimator.ofPropertyValuesHolder((Object)null, scaleX, scaleY);
         transition.setAnimator(LayoutTransition.APPEARING, scaleUpAnimator);
         transition.setDuration(LayoutTransition.APPEARING, 300);

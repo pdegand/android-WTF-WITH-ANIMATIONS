@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView listView = (ListView) findViewById(R.id.listview);
+        ListView listView = findViewById(R.id.listview);
         adapter = new MenusAdapter(this, Arrays.asList(Menu.values()));
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             View view = super.getView(position, convertView, parent);
             view.setBackgroundColor(
                     getContext().getResources().getColor(item.getApiLevel().getColorResource()));
-            TextView apiLevelTextView = (TextView) view.findViewById(R.id.textview_api_level);
+            TextView apiLevelTextView = view.findViewById(R.id.textview_api_level);
             apiLevelTextView.setText(
                     getString(R.string.api_level, item.getApiLevel().getSdkInt()));
             return view;

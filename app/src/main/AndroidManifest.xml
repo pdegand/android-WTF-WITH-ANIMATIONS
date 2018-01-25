@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.octo.pde.androidanimations" >
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.octo.pde.androidanimations">
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +20,7 @@
         <activity
             android:name=".activity.AnimationBasicsActivity"
             android:label="@string/title_activity_animation_basics"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
@@ -27,15 +28,15 @@
         <activity
             android:name=".activity.AnimationLimitsActivity"
             android:label="@string/title_activity_animation_limits"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
         </activity>
         <activity
-            android:name=".activity.ActivityTransitionActivity"
+            android:name=".activity.ActivityPendingTransitionActivity"
             android:label="@string/title_activity_activity_transition"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
@@ -43,7 +44,7 @@
         <activity
             android:name=".activity.AnimatorBasicsActivity"
             android:label="@string/title_activity_animator_basics"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
@@ -51,7 +52,7 @@
         <activity
             android:name=".activity.AnimatorChoregraphyActivity"
             android:label="@string/title_activity_animator_choregraphy"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
@@ -59,23 +60,15 @@
         <activity
             android:name=".activity.ViewPropertyAnimatorActivity"
             android:label="@string/title_activity_view_property_animator"
-            android:parentActivityName=".activity.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.octo.pde.androidanimations.activity.MainActivity" />>
-        </activity>
-        <activity
-            android:name=".activity.TransitionBasicsActivity"
-            android:label="@string/title_activity_transition_basics"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
         </activity>
         <activity
-            android:name=".activity.ViewCompatAnimateActivity"
-            android:label="@string/title_activity_nine_old_androids"
-            android:parentActivityName=".activity.MainActivity" >
+            android:name=".activity.TransitionBasicsActivity"
+            android:label="@string/title_activity_transition_basics"
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
@@ -83,7 +76,7 @@
         <activity
             android:name=".activity.LayoutTransitionActivity"
             android:label="@string/title_activity_layout_transition"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
@@ -91,11 +84,29 @@
         <activity
             android:name=".activity.LayoutTransitionChangingActivity"
             android:label="@string/title_activity_layout_transition_changing"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.octo.pde.androidanimations.activity.MainActivity" />
         </activity>
+        <activity
+            android:name=".activity.TransitionManagerActivity"
+            android:label="@string/title_activity_transition_manager"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.octo.pde.androidanimations.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CircularRevealActivity"
+            android:label="Circular Reveal" />
+        <activity
+            android:name=".activity.ActivityTransitionSourceActivity"
+            android:label="Activity Transition" />
+        <activity
+            android:name=".activity.ActivityTransitionTargetActivity"
+            android:label="Activity Transition" />
+        <activity android:name=".activity.PhysicsTransitionActivity" />
+        <activity android:name=".activity.StateListAnimatorActivity" />
     </application>
-
 </manifest>

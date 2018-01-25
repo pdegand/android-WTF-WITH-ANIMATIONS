@@ -28,7 +28,7 @@ public class AnimatorBasicsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animator_basics);
         rootView = findViewById(R.id.root_view);
-        paddingTextView = (TextView) findViewById(R.id.textview_padding);
+        paddingTextView = findViewById(R.id.textview_padding);
     }
 
     public void doClick(View view) {
@@ -70,6 +70,7 @@ public class AnimatorBasicsActivity extends AppCompatActivity {
         paddingAnimator.start();
     }
 
+    @SuppressWarnings("unused")
     public void setPaddingLeftOnTextView(int padding) {
         paddingTextView.setPadding(padding,
                 paddingTextView.getPaddingTop(),
@@ -77,6 +78,7 @@ public class AnimatorBasicsActivity extends AppCompatActivity {
                 paddingTextView.getPaddingBottom());
     }
 
+    @SuppressWarnings("unused")
     public int getPaddingLeftOnTextView() {
         return paddingTextView.getPaddingLeft();
     }

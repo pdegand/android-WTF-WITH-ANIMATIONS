@@ -3,10 +3,10 @@ package com.octo.pde.androidanimations.activity;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.transition.AutoTransition;
+import android.support.transition.Scene;
+import android.support.transition.TransitionManager;
 import android.support.v7.app.AppCompatActivity;
-import android.transition.AutoTransition;
-import android.transition.Scene;
-import android.transition.TransitionManager;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -23,7 +23,7 @@ public class TransitionBasicsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transition_basics);
 
-        container = ((ViewGroup)findViewById(R.id.scene));
+        container = findViewById(R.id.sceneRootLayout);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class TransitionBasicsActivity extends AppCompatActivity {
     }
 
     public void revertSceneTransition(View view) {
-        scene = Scene.getSceneForLayout(container, R.layout.activity_transition_basics, this);
+        scene = Scene.getSceneForLayout(container, R.layout.activity_transition_basics_scene1, this);
         TransitionManager.go(scene);
     }
 }

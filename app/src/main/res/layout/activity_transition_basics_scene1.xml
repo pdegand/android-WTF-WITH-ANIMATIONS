@@ -15,31 +15,24 @@
         android:id="@+id/button_transition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:onClick="revertSceneTransition"
-        android:paddingBottom="16dp"
-        android:paddingLeft="48dp"
-        android:paddingRight="48dp"
-        android:paddingTop="16dp"
-        android:text="REVERT" />
+        android:layout_centerHorizontal="true"
+        android:onClick="doSceneTransition"
+        android:text="GO" />
 
     <ImageView
         android:id="@+id/imageview_better_way"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
         android:contentDescription="@string/better_way"
         android:src="@drawable/better_way" />
 
     <ImageView
-        android:id="@+id/imageview_why"
+        android:id="@+id/imageview_octo_love"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageview_better_way"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/octo_why" />
-
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/octo_love"
+        android:src="@drawable/octo_love" />
 </RelativeLayout>

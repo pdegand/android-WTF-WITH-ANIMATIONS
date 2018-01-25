@@ -6,7 +6,7 @@ import android.view.MenuItem;
 
 import com.octo.pde.androidanimations.R;
 
-public class ActivityTransitionActivity extends AppCompatActivity {
+public class ActivityPendingTransitionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -25,7 +25,6 @@ public class AnimatorChoregraphyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animator_choregraphy);
         octoImageView = findViewById(R.id.imageview_octo);
-
     }
 
     public void doChoregraphy(View view) {
@@ -43,8 +42,8 @@ public class AnimatorChoregraphyActivity extends AppCompatActivity {
         AnimatorSet breakAnimator = new AnimatorSet();
 
         // SCALE DOWN ANIMATOR
-        PropertyValuesHolder scaleXValueHolder = PropertyValuesHolder.ofFloat("scaleX", 1f, 0.8f);
-        PropertyValuesHolder scaleYValueHolder = PropertyValuesHolder.ofFloat("scaleY", 1f, 0.8f);
+        PropertyValuesHolder scaleXValueHolder = PropertyValuesHolder.ofFloat(View.SCALE_X, 1f, 0.8f);
+        PropertyValuesHolder scaleYValueHolder = PropertyValuesHolder.ofFloat(View.SCALE_Y, 1f, 0.8f);
         Animator scaleAnimator = ObjectAnimator.ofPropertyValuesHolder(
                 octoImageView,
                 scaleXValueHolder,
@@ -59,7 +58,7 @@ public class AnimatorChoregraphyActivity extends AppCompatActivity {
         // ROTATE ANIMATOR
         Animator rotateAnimator = ObjectAnimator.ofFloat(
                 octoImageView,
-                "rotation",
+                View.ROTATION,
                 0f,
                 75f
         );
@@ -68,7 +67,7 @@ public class AnimatorChoregraphyActivity extends AppCompatActivity {
         // CENTER ANIMATOR
         Animator centerAnimator = ObjectAnimator.ofFloat(
                 octoImageView,
-                "translationX",
+                View.TRANSLATION_X,
                 0,
                 octoImageView.getMeasuredWidth() / 2
         );
@@ -82,7 +81,7 @@ public class AnimatorChoregraphyActivity extends AppCompatActivity {
         // FALL DOWN ANIMATOR
         Animator fallDownAnimator = ObjectAnimator.ofFloat(
                 octoImageView,
-                "translationY",
+                View.TRANSLATION_Y,
                 octoImageView.getRootView().getHeight() - octoImageView.getTop()
         );
         fallDownAnimator.setInterpolator(new AccelerateInterpolator());
@@ -90,7 +89,7 @@ public class AnimatorChoregraphyActivity extends AppCompatActivity {
         // FADE OUT ANIMATOR
         Animator fadeOutAnimator = ObjectAnimator.ofFloat(
                 octoImageView,
-                "alpha",
+                View.ALPHA,
                 0f
         );
         fadeOutAnimator.setInterpolator(new LinearInterpolator());

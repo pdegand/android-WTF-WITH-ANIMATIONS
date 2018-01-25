@@ -17,5 +17,6 @@
     <string name="title_activity_nine_old_androids">NineOldAndroids</string>
     <string name="title_activity_layout_transition">Layout Transition</string>
     <string name="title_activity_layout_transition_changing">Layout Transition Changing</string>
+    <string name="title_activity_transition_manager">Transition Manager</string>
 
 </resources>
